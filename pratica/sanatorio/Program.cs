@@ -15,6 +15,7 @@ class Program
             Console.WriteLine("\n--- MENÚ ---");
             Console.WriteLine("1. Asignar nueva intervención a un paciente");
             Console.WriteLine("2. Calcular costo de intervenciones de un paciente");
+            Console.WriteLine("3. Ver reporte de intervenciones pendientes");
             Console.WriteLine("0. Salir");
             Console.Write("Opción: ");
             opcion = int.Parse(Console.ReadLine());
@@ -30,6 +31,9 @@ class Program
                     Console.Write("Ingrese DNI del paciente: ");
                     string dniD = Console.ReadLine();
                     sanatorio.CalcularCostoPorDNI(dniD);
+                    break;
+                case 3:
+                    sanatorio.MostrarReportePendientes();
                     break;
                 case 0:
                     Console.WriteLine("Chau!");
