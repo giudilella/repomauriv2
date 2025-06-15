@@ -1,9 +1,9 @@
 namespace jugadorCansado
 {
-    public interface IJugadorCansado
+    public interface Jugador
     {
-        bool Correr(int minutos);
-        bool Cansado();
-        void Descansar(int minutos);
+        bool correr(int minutos);
+        bool cansado();
+        void descansar(int minutos);
     }
 }

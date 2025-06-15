@@ -5,25 +5,19 @@ namespace jugadorCansado
     {
         static void Main(string[] args)
         {
-            jugador j1 = new amateur();
-            jugadorCansado j2 = new pro();
-            Console.WriteLine("JUgador amateur corre 15 mintuos: ");
-            bool resuktado = j1.correr(15);
-            Console.WriteLine("Pudo correr?: " + resultado);
+            Jugador j1 = new Amateur();
+            Jugador j2 = new Profesional();
+
+            Console.WriteLine("Jugador amateur corre 15 minutos: ");
+            Console.WriteLine("Pudo correr?: " + j1.correr(15));
             Console.WriteLine("Está cansado?: " + j1.cansado());
 
-            Console.WriteLine();
+            Console.WriteLine("\nJugador profesional corre 35 minutos: ");
+            Console.WriteLine("Pudo correr?: " + j2.correr(35));
+            Console.WriteLine("Está cansado?: " + j2.cansado());
 
-            Console.WriteLine("Jugador profesional (pro) corre 35 minutos: ");
-            bool resultado2 = j2.correr(35);
-            Console.WriteLine("Pudocorrer?: " + r2);
-            Console.WriteLine("está cansado?: " + j2.cansado());
-
-            Console.WriteLine();
-
-            Console.WriteLine("Jugador amateur intentó correr 10 más: ");
-            bool resultado3 = j1.correr(10);
-            Console.WriteLine("Pudo correr?: " + resultado3);
+            Console.WriteLine("\nJugador amateur intenta correr 10 más: ");
+            Console.WriteLine("Pudo correr?: " + j1.correr(10));
             Console.WriteLine("Está cansado?: " + j1.cansado());
         }
     }

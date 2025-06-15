@@ -1,0 +1,15 @@
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\bin\Debug\net8.0\bicisautosycamiones.exe
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\bin\Debug\net8.0\bicisautosycamiones.deps.json
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\bin\Debug\net8.0\bicisautosycamiones.runtimeconfig.json
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\bin\Debug\net8.0\bicisautosycamiones.dll
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\bin\Debug\net8.0\bicisautosycamiones.pdb
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\obj\Debug\net8.0\bicisautosycamiones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\obj\Debug\net8.0\bicisautosycamiones.AssemblyInfoInputs.cache
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\obj\Debug\net8.0\bicisautosycamiones.AssemblyInfo.cs
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\obj\Debug\net8.0\bicisautosycamiones.csproj.CoreCompileInputs.cache
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\obj\Debug\net8.0\bicisautosycamiones.sourcelink.json
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\obj\Debug\net8.0\bicisautosycamiones.dll
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\obj\Debug\net8.0\refint\bicisautosycamiones.dll
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\obj\Debug\net8.0\bicisautosycamiones.pdb
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\obj\Debug\net8.0\bicisautosycamiones.genruntimeconfig.cache
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\bicisautosycamiones\obj\Debug\net8.0\ref\bicisautosycamiones.dll

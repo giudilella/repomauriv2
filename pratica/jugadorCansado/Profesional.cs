@@ -1,6 +1,6 @@
 namespace jugadorCansado
 {
-    public class Profesional : jugadorCansado
+    public class Profesional : Jugador
     {
         int energia = 40;
         int energiaMax = 40;
@@ -12,21 +12,15 @@ namespace jugadorCansado
                 energia -= minutos;
                 return true;
             }
-            else
-            {
-                energia = 0;
-                return false;
-            }
+            energia = 0;
+            return false;
         }
-        public bool cansado()
-        {
-            return energia == 0;
-        }
+
+        public bool cansado() => energia == 0;
+
         public void descansar(int minutos)
         {
-            energia += minutos;
-            if (energia > energiaMax)
-                energia = energiaMax;
+            energia = Math.Min(energia + minutos, energiaMax);
         }
     }
 }

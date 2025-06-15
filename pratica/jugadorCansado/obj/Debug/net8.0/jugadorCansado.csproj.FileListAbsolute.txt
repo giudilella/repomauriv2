@@ -1,0 +1,15 @@
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\bin\Debug\net8.0\jugadorCansado.exe
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\bin\Debug\net8.0\jugadorCansado.deps.json
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\bin\Debug\net8.0\jugadorCansado.runtimeconfig.json
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\bin\Debug\net8.0\jugadorCansado.dll
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\bin\Debug\net8.0\jugadorCansado.pdb
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\obj\Debug\net8.0\jugadorCansado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\obj\Debug\net8.0\jugadorCansado.AssemblyInfoInputs.cache
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\obj\Debug\net8.0\jugadorCansado.AssemblyInfo.cs
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\obj\Debug\net8.0\jugadorCansado.csproj.CoreCompileInputs.cache
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\obj\Debug\net8.0\jugadorCansado.sourcelink.json
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\obj\Debug\net8.0\jugadorCansado.dll
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\obj\Debug\net8.0\refint\jugadorCansado.dll
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\obj\Debug\net8.0\jugadorCansado.pdb
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\obj\Debug\net8.0\jugadorCansado.genruntimeconfig.cache
+C:\Users\Pili\Desktop\repo\repomauriv2\pratica\jugadorCansado\obj\Debug\net8.0\ref\jugadorCansado.dll
