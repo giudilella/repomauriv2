@@ -49,4 +49,19 @@ public class Carrito
     }
 }
 
-// agregar método para eliminar un producto del carrito (ro o shu) y para calcular el tot a pagar c Iva (ro o shu)
+ // agregar método para eliminar un producto del carrito(giu)
+public string EliminarProducto(int codigoProducto)
+{
+    var item = items.FirstOrDefault(i => i.Producto.Codigo == codigoProducto);
+    if (item == null)
+        return "El producto no está en el carrito.";
+    items.Remove(item);
+    return $"Se eliminó {item.Producto.Nombre} del carrito.";
+}
+
+// calcular total a pagar con IVA (giu)
+public double TotalPagar()
+{
+    double subtotal = items.Sum(i => i.Subtotal());
+    return subtotal * 1.21; // 21% de IVA
+}
