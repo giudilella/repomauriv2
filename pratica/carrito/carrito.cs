@@ -21,8 +21,6 @@ public class Carrito
         return $"Se agregaron {cantidad} x {prod.Nombre}";
     }
 
-
-
     // (PILI) Ver contenido del carrito
     public void VerCarrito()
     {
@@ -40,28 +38,40 @@ public class Carrito
 
 
     // (PILI) Finalizar compra: actualiza stock y vacía carrito
-    public void FinalizarCompra()
-    {
-        foreach (var i in items)
-            i.Producto.Stock -= i.Cantidad;
-        items.Clear();
-        Console.WriteLine("Compra completada y stock actualizado.");
+    public Ticket FinalizarCompra(){
+        if (items.Count == 0){
+        Console.WriteLine("El carrito está vacío. No se puede finalizar la compra.");
+        return null;
+        }
+
+    var itemsTicket = new List<ItemCarrito>(items.Select(i => new ItemCarrito(i.Producto, i.Cantidad)));
+
+    foreach (var i in items)
+        i.Producto.Stock -= i.Cantidad;
+
+    double totalConIVA = TotalPagar();
+
+    var ticket = new Ticket(Ticket.GenerarID(), DateTime.Now, itemsTicket, totalConIVA);
+
+    items.Clear();
+    Console.WriteLine("Compra completada y stock actualizado.");
+
+    return ticket;
     }
-}
 
  // agregar método para eliminar un producto del carrito(giu)
-public string EliminarProducto(int codigoProducto)
-{
-    var item = items.FirstOrDefault(i => i.Producto.Codigo == codigoProducto);
-    if (item == null)
-        return "El producto no está en el carrito.";
-    items.Remove(item);
-    return $"Se eliminó {item.Producto.Nombre} del carrito.";
-}
+    public string EliminarProducto(int codigoProducto){
+        var item = items.FirstOrDefault(i => i.Producto.Codigo == codigoProducto);
+        if (item == null)
+            return "El producto no está en el carrito.";
+        items.Remove(item);
+        return $"Se eliminó {item.Producto.Nombre} del carrito.";
+    }
 
 // calcular total a pagar con IVA (giu)
-public double TotalPagar()
-{
-    double subtotal = items.Sum(i => i.Subtotal());
-    return subtotal * 1.21; // 21% de IVA
+    public double TotalPagar()
+    {
+        double subtotal = items.Sum(i => i.Subtotal());
+        return subtotal * 1.21; // 21% de IVA
+    }
 }

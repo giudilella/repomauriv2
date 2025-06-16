@@ -18,6 +18,8 @@ class Program
             Console.WriteLine("6. Ver contenido del carrito (PILI)");
             Console.WriteLine("7. Ver total a pagar");
             Console.WriteLine("8. Finalizar compra (PILI)");
+            Console.WriteLine("9. Ver historial de compras");
+            Console.WriteLine("10. Ver detalle de un ticket");
             Console.WriteLine("0. Salir");
             Console.Write("Opción: ");
             var op = Console.ReadLine();
@@ -44,9 +46,16 @@ class Program
                                                    : "Producto no existe.");
                     break;
                 case "5":
-                    Console.Write("Código a eliminar: ");
-                    int cod2 = int.Parse(Console.ReadLine());
-                    Console.WriteLine(tienda.Carrito.EliminarProducto(cod2));
+                    try{
+                        Console.Write("Código a eliminar: ");
+                        int cod2 = int.Parse(Console.ReadLine());
+                        Console.Write("Cantidad a eliminar: ");
+                        int cantEliminar = int.Parse(Console.ReadLine());
+                        Console.WriteLine(tienda.Carrito.EliminarProducto(cod2, cantEliminar));
+                    }
+                    catch (FormatException){
+                        Console.WriteLine("Entrada inválida. Ingrese números válidos.");
+                    }
                     break;
                 case "6":
                     tienda.Carrito.VerCarrito();
@@ -56,6 +65,19 @@ class Program
                     break;
                 case "8":
                     tienda.Carrito.FinalizarCompra();
+                    break;
+                case "9":
+                    tienda.MostrarHistorialCompras();
+                    break;
+                case "10":
+                    try{
+                        Console.Write("ID del ticket: ");
+                        int idTicket = int.Parse(Console.ReadLine());
+                        tienda.MostrarTicketPorID(idTicket);
+                    }
+                    catch (FormatException){
+                        Console.WriteLine("Entrada inválida. Ingrese un número válido.");
+                    }
                     break;
                 case "0":
                     salir = true;
