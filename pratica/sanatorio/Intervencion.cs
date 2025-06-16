@@ -28,4 +28,10 @@ public class Intervencion
             total -= total * cobertura;
         return total;
     }
+
+    public void AsignarAPaciente(Paciente paciente){
+    if (paciente != null && !paciente.intervenciones.Contains(this)){
+        paciente.intervenciones.Add(this);
+    }
+}
 }

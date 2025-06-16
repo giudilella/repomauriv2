@@ -20,4 +20,10 @@ public class Paciente
         this.obraSocial = obraSocial;
         this.cobertura = cobertura;
     }
+
+    public void AgregarIntervencion(Intervencion intervencion){
+        if (!intervenciones.Contains(intervencion)){
+            intervenciones.Add(intervencion);
+        }
+    }
 }
