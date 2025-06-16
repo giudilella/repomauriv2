@@ -1,6 +1,7 @@
 ﻿using System;
 
-public class Semaforo{
+public class Semaforo
+{
     private string colorActual;
     private int tiempoTranscurrido;
     private bool intermitente;
@@ -13,13 +14,17 @@ public class Semaforo{
         ("Amarillo", 2)
     };
 
-    public Semaforo(string colorInicial){
-        if (colorInicial != "Rojo" && colorInicial != "Verde" && colorInicial != "Amarillo"){
+    public Semaforo(string colorInicial)
+    {
+        if (colorInicial != "Rojo" && colorInicial != "Verde" && colorInicial != "Amarillo")
+        {
             throw new ArgumentException("Color inicial debe ser Rojo, Verde o Amarillo");
         }
 
-        for (int i = 0; i < secuencia.Length; i++){
-            if (secuencia[i].color.StartsWith(colorInicial)){
+        for (int i = 0; i < secuencia.Length; i++)
+        {
+            if (secuencia[i].color.StartsWith(colorInicial))
+            {
                 indiceSecuencia = i;
                 break;
             }

@@ -1,0 +1,14 @@
+C:\Users\rarom\Downloads\ejesMauri\semaforoV2\semaforoV2\bin\Debug\net8.0\semaforoV2.exe
+C:\Users\rarom\Downloads\ejesMauri\semaforoV2\semaforoV2\bin\Debug\net8.0\semaforoV2.deps.json
+C:\Users\rarom\Downloads\ejesMauri\semaforoV2\semaforoV2\bin\Debug\net8.0\semaforoV2.runtimeconfig.json
+C:\Users\rarom\Downloads\ejesMauri\semaforoV2\semaforoV2\bin\Debug\net8.0\semaforoV2.dll
+C:\Users\rarom\Downloads\ejesMauri\semaforoV2\semaforoV2\bin\Debug\net8.0\semaforoV2.pdb
+C:\Users\rarom\Downloads\ejesMauri\semaforoV2\semaforoV2\obj\Debug\net8.0\semaforoV2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rarom\Downloads\ejesMauri\semaforoV2\semaforoV2\obj\Debug\net8.0\semaforoV2.AssemblyInfoInputs.cache
+C:\Users\rarom\Downloads\ejesMauri\semaforoV2\semaforoV2\obj\Debug\net8.0\semaforoV2.AssemblyInfo.cs
+C:\Users\rarom\Downloads\ejesMauri\semaforoV2\semaforoV2\obj\Debug\net8.0\semaforoV2.csproj.CoreCompileInputs.cache
+C:\Users\rarom\Downloads\ejesMauri\semaforoV2\semaforoV2\obj\Debug\net8.0\semaforoV2.dll
+C:\Users\rarom\Downloads\ejesMauri\semaforoV2\semaforoV2\obj\Debug\net8.0\refint\semaforoV2.dll
+C:\Users\rarom\Downloads\ejesMauri\semaforoV2\semaforoV2\obj\Debug\net8.0\semaforoV2.pdb
+C:\Users\rarom\Downloads\ejesMauri\semaforoV2\semaforoV2\obj\Debug\net8.0\semaforoV2.genruntimeconfig.cache
+C:\Users\rarom\Downloads\ejesMauri\semaforoV2\semaforoV2\obj\Debug\net8.0\ref\semaforoV2.dll
