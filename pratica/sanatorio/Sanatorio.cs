@@ -99,3 +99,19 @@ public class Sanatorio
         Console.WriteLine($"Costo total para el paciente {paciente.nombre} {paciente.apellido}: ${total:F2}");
     }
 }
+public void MostrarReportePendientes()
+{
+    Console.WriteLine("\n--- Reporte de Liquidaciones Pendientes ---");
+    foreach (var paciente in pacientes)
+    {
+        foreach (var i in paciente.intervenciones.Where(i => !i.pagado))
+        {
+            string nombreCompletoPaciente = $"{paciente.nombre} {paciente.apellido}";
+            string nombreCompletoMedico = $"{i.medico.nombre} {i.medico.apellido}";
+            string obraSocial = string.IsNullOrWhiteSpace(paciente.obraSocial) ? "-" : paciente.obraSocial;
+            double monto = i.CalcularCosto(paciente.obraSocial, paciente.cobertura);
+
+            Console.WriteLine($"ID: {i.Id} | Fecha: {i.fecha:yyyy-MM-dd} | {i.descripcion} | Paciente: {nombreCompletoPaciente} | Médico: {nombreCompletoMedico} ({i.medico.matricula}) | Obra Social: {obraSocial} | Total a Pagar: ${monto:F2}");
+        }
+    }
+}

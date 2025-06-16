@@ -1,0 +1,12 @@
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+.vs/
+.vscode/
+*.suo
+*.user
+[Nn]u[Gg]et/
+*.nupkg
+*.cache

@@ -10,4 +10,14 @@ public class Paciente
     public string obraSocial { get; set; } = "-";
     public double cobertura { get; set; } = 0;
     public List<Intervencion> intervenciones { get; set; } = new List<Intervencion>();
+
+    public Paciente(string dni, string nombre, string apellido, string telefono, string obraSocial = "-", double cobertura = 0)
+    {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.telefono = telefono;
+        this.obraSocial = obraSocial;
+        this.cobertura = cobertura;
+    }
 }
