@@ -59,16 +59,27 @@ public class Carrito
     return ticket;
     }
 
- // agregar método para eliminar un producto del carrito(giu)
-    public string EliminarProducto(int codigoProducto){
+    // agregar para eliminar UN producto del carrito(giu)
+    public string EliminarProducto(int codigoProducto)
+    {
         var item = items.FirstOrDefault(i => i.Producto.Codigo == codigoProducto);
         if (item == null)
-            return "El producto no está en el carrito.";
-        items.Remove(item);
-        return $"Se eliminó {item.Producto.Nombre} del carrito.";
+            return "El producto no esta en el carrito.";
+
+        item.Cantidad--; // Le resto 1 a la cantidad
+        if (item.Cantidad <= 0)
+        {
+            items.Remove(item);
+            return $"Se elimino {item.Producto.Nombre} del carrito.";
+        }
+        else
+        {
+            return $"Se eliminó 1 de {item.Producto.Nombre}. Quedan {item.Cantidad} en el carrito.";
+        }
     }
 
-// calcular total a pagar con IVA (giu)
+
+    // calcular total a pagar con IVA (giu)
     public double TotalPagar()
     {
         double subtotal = items.Sum(i => i.Subtotal());
