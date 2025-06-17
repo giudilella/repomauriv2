@@ -18,8 +18,8 @@ namespace BancoApp
             banco.Extraer("002", 100);
             bool resultado = banco.Transferencia("001", 300, "002");
 
-            Console.WriteLine($"Cuenta 001 - Saldo: {cuenta1.ObtenerSaldo()}");
-            Console.WriteLine($"Cuenta 002 - Saldo: {cuenta2.ObtenerSaldo()}");
+            Console.WriteLine($"Cuenta 001 - Saldo: {cuenta1.obtenerSaldo()}");
+            Console.WriteLine($"Cuenta 002 - Saldo: {cuenta2.obtenerSaldo()}");
             Console.WriteLine($"Transferencia realizada: {resultado}");
         }
     }

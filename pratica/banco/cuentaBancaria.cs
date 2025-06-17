@@ -13,22 +13,22 @@
             this.saldo = saldoInicial;
         }
 
-        public double ObtenerSaldo()
+        public double obtenerSaldo()
         {
             return saldo;
         }
 
-        public void ModificarSaldo(double nuevoSaldo)
+        public void cambiarSaldo(double nuevoSaldo)
         {
             saldo = nuevoSaldo;
         }
 
-        public string ObtenerNumeroCuenta()
+        public string obtenerNumeroCuenta()
         {
             return numeroCuenta;
         }
 
-        public string ObtenerTitular()
+        public string obtenerTitular()
         {
             return titular;
         }

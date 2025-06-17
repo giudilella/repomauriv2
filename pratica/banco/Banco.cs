@@ -9,7 +9,7 @@ namespace BancoApp
 
         public void AgregarCuenta(CuentaBancaria cuenta)
         {
-            cuentas[cuenta.ObtenerNumeroCuenta()] = cuenta;
+            cuentas[cuenta.obtenerNumeroCuenta()] = cuenta;
         }
 
         public bool Depositar(string numeroCuenta, double monto)
@@ -18,7 +18,7 @@ namespace BancoApp
                 return false;
 
             var cuenta = cuentas[numeroCuenta];
-            cuenta.ModificarSaldo(cuenta.ObtenerSaldo() + monto);
+            cuenta.cambiarSaldo(cuenta.obtenerSaldo() + monto);
             return true;
         }
 
@@ -28,10 +28,10 @@ namespace BancoApp
                 return false;
 
             var cuenta = cuentas[numeroCuenta];
-            if (monto <= 0 || monto > cuenta.ObtenerSaldo())
+            if (monto <= 0 || monto > cuenta.obtenerSaldo())
                 return false;
 
-            cuenta.ModificarSaldo(cuenta.ObtenerSaldo() - monto);
+            cuenta.cambiarSaldo(cuenta.obtenerSaldo() - monto);
             return true;
         }
 
@@ -43,15 +43,15 @@ namespace BancoApp
             var origen = cuentas[cuentaOrigen];
             var destino = cuentas[cuentaDestino];
 
-            if (monto <= 0 || monto > origen.ObtenerSaldo())
+            if (monto <= 0 || monto > origen.obtenerSaldo())
                 return false;
 
-            origen.ModificarSaldo(origen.ObtenerSaldo() - monto);
-            destino.ModificarSaldo(destino.ObtenerSaldo() + monto);
+            origen.cambiarSaldo(origen.obtenerSaldo() - monto);
+            destino.cambiarSaldo(destino.obtenerSaldo() + monto);
             return true;
         }
 
-        public CuentaBancaria ObtenerCuenta(string numeroCuenta)
+        public CuentaBancaria obtenerCuenta(string numeroCuenta)
         {
             if (cuentas.ContainsKey(numeroCuenta))
                 return cuentas[numeroCuenta];
