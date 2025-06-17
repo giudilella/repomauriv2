@@ -1,0 +1,14 @@
+C:\Users\rarom\Downloads\ejesMauri\sanatorio\bin\Debug\net8.0\sanatorio.exe
+C:\Users\rarom\Downloads\ejesMauri\sanatorio\bin\Debug\net8.0\sanatorio.deps.json
+C:\Users\rarom\Downloads\ejesMauri\sanatorio\bin\Debug\net8.0\sanatorio.runtimeconfig.json
+C:\Users\rarom\Downloads\ejesMauri\sanatorio\bin\Debug\net8.0\sanatorio.dll
+C:\Users\rarom\Downloads\ejesMauri\sanatorio\bin\Debug\net8.0\sanatorio.pdb
+C:\Users\rarom\Downloads\ejesMauri\sanatorio\obj\Debug\net8.0\sanatorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rarom\Downloads\ejesMauri\sanatorio\obj\Debug\net8.0\sanatorio.AssemblyInfoInputs.cache
+C:\Users\rarom\Downloads\ejesMauri\sanatorio\obj\Debug\net8.0\sanatorio.AssemblyInfo.cs
+C:\Users\rarom\Downloads\ejesMauri\sanatorio\obj\Debug\net8.0\sanatorio.csproj.CoreCompileInputs.cache
+C:\Users\rarom\Downloads\ejesMauri\sanatorio\obj\Debug\net8.0\sanatorio.dll
+C:\Users\rarom\Downloads\ejesMauri\sanatorio\obj\Debug\net8.0\refint\sanatorio.dll
+C:\Users\rarom\Downloads\ejesMauri\sanatorio\obj\Debug\net8.0\sanatorio.pdb
+C:\Users\rarom\Downloads\ejesMauri\sanatorio\obj\Debug\net8.0\sanatorio.genruntimeconfig.cache
+C:\Users\rarom\Downloads\ejesMauri\sanatorio\obj\Debug\net8.0\ref\sanatorio.dll
