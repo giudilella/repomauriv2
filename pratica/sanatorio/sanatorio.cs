@@ -4,6 +4,7 @@ using System.Collections.Generic;
 public class Sanatorio{
     private List<Paciente> listaPacientes = new List<Paciente>();
     private List<Medico> listaMedicos = new List<Medico>();
+    private List<Intervencion> listaIntervencionesHabilitadas = new List<Intervencion>();
     private List<Intervencion> listaIntervenciones = new List<Intervencion>();
 
     public Sanatorio(){
@@ -12,6 +13,9 @@ public class Sanatorio{
         listaMedicos.Add(new Medico("Giuliana", "Di Lella", "0308", "Cardiología", true));
         listaPacientes.Add(new Paciente("44543817", "Juan", "Pérez", "341-360-7359", "OSDE", 0.5));
         listaPacientes.Add(new Paciente("37057190", "María", "López", "341-629-1470", "-", 0));
+        listaIntervencionesHabilitadas.Add(new Intervencion("Consulta Cardiológica", "Cardiología", 5000, false));
+        listaIntervencionesHabilitadas.Add(new Intervencion("Cirugía de Rodilla", "Traumatología", 15000, true));
+        listaIntervencionesHabilitadas.Add(new Intervencion("Ecocardiograma", "Cardiología", 8000, false));     
     }
     public void AgregarPaciente(Paciente paciente){
         int i = 0;
@@ -100,12 +104,20 @@ public class Sanatorio{
             return;
         }
 
-        Console.Write("Descripción de la intervención: ");
-        string descripcion = Console.ReadLine();
-        Console.Write("¿Es de alta complejidad? (s/n): ");
-        bool altaComplejidad = Console.ReadLine().ToLower() == "s";
-        Console.Write("Arancel: ");
-        double arancel = double.Parse(Console.ReadLine());
+        Console.WriteLine("\nIntervenciones habilitadas para la especialidad seleccionada:");
+        List<Intervencion> intervencionesFiltradas = listaIntervencionesHabilitadas.FindAll(inv => inv.especialidad == medicoSeleccionado.especialidad);
+        for (int k = 0; k < intervencionesFiltradas.Count; k++)
+        { 
+            Console.WriteLine($"{k + 1}. {intervencionesFiltradas[k].descripcion} - Arancel: ${intervencionesFiltradas[k].arancel} - Alta Complejidad: {(intervencionesFiltradas[k].altaComplejidad ? "Sí" : "No")}"); // NUEVA
+        }
+        Console.Write("Seleccione el número de la intervención: "); 
+        int seleccion = int.Parse(Console.ReadLine()); 
+        if (seleccion < 1 || seleccion > intervencionesFiltradas.Count)
+        {
+            Console.WriteLine("Selección inválida.");
+            return;
+        }
+        Intervencion intervencionSeleccionada = intervencionesFiltradas[seleccion - 1];
         Console.Write("Fecha (dd/MM/yyyy): ");
         DateTime fecha = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null);
         Console.Write("¿Pagado? (s/n): ");
@@ -113,10 +125,10 @@ public class Sanatorio{
 
         Intervencion intervencion = new Intervencion{
             fecha = fecha,
-            descripcion = descripcion,
-            especialidad = medicoSeleccionado.especialidad,
-            arancel = arancel,
-            altaComplejidad = altaComplejidad,
+            descripcion = intervencionSeleccionada.descripcion,
+            especialidad = intervencionSeleccionada.especialidad,
+            arancel = intervencionSeleccionada.arancel,
+            altaComplejidad = intervencionSeleccionada.altaComplejidad,
             medico = medicoSeleccionado,
             pagado = pagado
         };

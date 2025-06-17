@@ -17,6 +17,10 @@ public class Intervencion
     public Intervencion()
     {
         Id = contador++;
+        this.descripcion = descripcion;
+        this.especialidad = especialidad;
+        this.arancel = arancel;
+        this.altaComplejidad = altaComplejidad;
     }
 
     public double CalcularCosto(string obraSocial, double cobertura)
