@@ -1,7 +1,6 @@
 using System;
 
-public class Intervencion
-{
+public class Intervencion{
     private static int contador = 1;
 
     public int Id { get; private set; }
@@ -14,8 +13,7 @@ public class Intervencion
     public Medico medico { get; set; }
     public bool pagado { get; set; }
 
-    public Intervencion()
-    {
+    public Intervencion(){
         Id = contador++;
         this.descripcion = descripcion;
         this.especialidad = especialidad;
@@ -23,8 +21,15 @@ public class Intervencion
         this.altaComplejidad = altaComplejidad;
     }
 
-    public double CalcularCosto(string obraSocial, double cobertura)
-    {
+    public Intervencion(string descripcion, string especialidad, double arancel, bool altaComplejidad) //inicializa las intervenciones para sanatorio.cs{
+        Id = contador++;
+        this.descripcion = descripcion;
+        this.especialidad = especialidad;
+        this.arancel = arancel;
+        this.altaComplejidad = altaComplejidad;
+    }
+
+    public double CalcularCosto(string obraSocial, double cobertura){
         double total = arancel;
         if (altaComplejidad)
             total += arancel * porcentajeEquipoEspecial;
