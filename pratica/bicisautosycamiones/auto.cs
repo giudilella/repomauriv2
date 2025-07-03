@@ -1,4 +1,4 @@
-public class Auto : Vehiculo 
+﻿public class Auto : Vehiculo
 {
     private int pos = 0;
     private int velocidad;
@@ -7,5 +7,5 @@ public class Auto : Vehiculo
 
     public void mover(int tiempo) => pos += tiempo * velocidad;
     public int posicion() => pos;
-    public void reiniciarPosicion() => pos = 0;  
+    public void reiniciarPosicion() => pos = 0;
 }
