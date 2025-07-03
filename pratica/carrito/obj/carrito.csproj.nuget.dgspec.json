@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rarom\\Downloads\\ejesMauri\\carrito\\carritoCastroDiLellaRomero\\carritoCastroDiLellaRomero.csproj": {}
+    "C:\\Users\\rarom\\Downloads\\ejesMauri\\carrito\\carrito.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rarom\\Downloads\\ejesMauri\\carrito\\carritoCastroDiLellaRomero\\carritoCastroDiLellaRomero.csproj": {
+    "C:\\Users\\rarom\\Downloads\\ejesMauri\\carrito\\carrito.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rarom\\Downloads\\ejesMauri\\carrito\\carritoCastroDiLellaRomero\\carritoCastroDiLellaRomero.csproj",
-        "projectName": "carritoCastroDiLellaRomero",
-        "projectPath": "C:\\Users\\rarom\\Downloads\\ejesMauri\\carrito\\carritoCastroDiLellaRomero\\carritoCastroDiLellaRomero.csproj",
+        "projectUniqueName": "C:\\Users\\rarom\\Downloads\\ejesMauri\\carrito\\carrito.csproj",
+        "projectName": "carrito",
+        "projectPath": "C:\\Users\\rarom\\Downloads\\ejesMauri\\carrito\\carrito.csproj",
         "packagesPath": "C:\\Users\\rarom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rarom\\Downloads\\ejesMauri\\carrito\\carritoCastroDiLellaRomero\\obj\\",
+        "outputPath": "C:\\Users\\rarom\\Downloads\\ejesMauri\\carrito\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
