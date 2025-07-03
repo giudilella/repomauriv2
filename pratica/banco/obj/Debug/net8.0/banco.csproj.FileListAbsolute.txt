@@ -1,0 +1,14 @@
+C:\Users\rarom\Downloads\ejesMauri\banco\obj\Debug\net8.0\banco.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rarom\Downloads\ejesMauri\banco\obj\Debug\net8.0\banco.AssemblyInfoInputs.cache
+C:\Users\rarom\Downloads\ejesMauri\banco\obj\Debug\net8.0\banco.AssemblyInfo.cs
+C:\Users\rarom\Downloads\ejesMauri\banco\obj\Debug\net8.0\banco.csproj.CoreCompileInputs.cache
+C:\Users\rarom\Downloads\ejesMauri\banco\bin\Debug\net8.0\banco.exe
+C:\Users\rarom\Downloads\ejesMauri\banco\bin\Debug\net8.0\banco.deps.json
+C:\Users\rarom\Downloads\ejesMauri\banco\bin\Debug\net8.0\banco.runtimeconfig.json
+C:\Users\rarom\Downloads\ejesMauri\banco\bin\Debug\net8.0\banco.dll
+C:\Users\rarom\Downloads\ejesMauri\banco\bin\Debug\net8.0\banco.pdb
+C:\Users\rarom\Downloads\ejesMauri\banco\obj\Debug\net8.0\banco.dll
+C:\Users\rarom\Downloads\ejesMauri\banco\obj\Debug\net8.0\refint\banco.dll
+C:\Users\rarom\Downloads\ejesMauri\banco\obj\Debug\net8.0\banco.pdb
+C:\Users\rarom\Downloads\ejesMauri\banco\obj\Debug\net8.0\banco.genruntimeconfig.cache
+C:\Users\rarom\Downloads\ejesMauri\banco\obj\Debug\net8.0\ref\banco.dll
